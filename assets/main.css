@@ -25,6 +25,16 @@
     vertical-align:baseline;
 }
 
+.two-columns {
+    /* Standard property */
+    column-count: 2; 
+    /* Optional: adds space between columns */
+    column-gap: 20px; 
+    /* Optional: keeps bullets inside the list item */
+    list-style-position: inside; 
+}
+
+
 body{
     background-color: #fafafa;
     background-size: cover;
@@ -119,7 +129,7 @@ td.sponsor img{width: 100%}
 footer{font-size:0.875em; margin-top:12em; text-align:center;}
 
 /* My hacky way of making the site mobile-friendly */
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 900px) {
     h2{font-size:3.00em;}
     p{font-size:1.5em; line-height:1.5em;}
     th,td,tr{font-size:1.5em; line-height:1.5em;}
